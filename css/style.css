@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+body{
+    background-color: #260801;
+    color: #EEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    text-align: center;
+    padding-right: 15px;
+    color:#118C8C;
+    font-family: 'Fugaz One', cursive;
+}
+
+#h1{
+    color: #A63C94;
+    letter-spacing: 19px;
+    font-family: 'Suez One', serif;
+
+}
+.tab-frame{
+    display:flex;
+    flex-direction: column;
+    background-color: #262118;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border box;
+    border: 2px solid #EEE;
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+}
+
+a{
+    color:#EEE;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color:#F29999;
+}
+a:hover{
+    padding-left: 3px;
+}
+a:link{
+    color:#F29999;
+}
+a:visited{
+    text-decoration: #8ABF63;
+}
+a:active{
+    color: #A63C94;
+}
