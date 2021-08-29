@@ -26,13 +26,25 @@ class Tab {
 }
 
 let dumb = new Tab("Nirvana","Dumb","./tabs/Dumb.pdf");
-let lakeOfFire= new Tab("Nirvana", "Lake of fire","./tabs/LakeOfFire.pdf");
-let whereDidYouSleepLastNight = new Tab("Nirvana", "Where did you sleep last night","./tabs/WhereDidYouSleepLastNight.pdf");
-let somethingInTheWay = new Tab("Nirvana", "Something in the way","./tabs/SomethingInTheWay.pdf");
+let exhausted = new Tab("Foo Fighter","Exhausted","./tabs/Exhausted.pdf");
+let heartShapedBox = new Tab("Nirvana", "Heart Shaped Box","./tabs/HeartShapedBox.pdf");
+let lakeOfFire = new Tab("Nirvana", "Lake of fire","./tabs/LakeOfFire.pdf");
+let lithium = new Tab("Nirvana", "Lithium","./tabs/Litium.pdf");
+let loveBuzz = new Tab("Nirvana", "Love Buzz","./tabs/LoveBuzz.pdf");
+let myHero = new Tab("Foo Fighter","My Hero","./tabs/MyHero.pdf");
+let pennyRoyalTea = new Tab("Nirvana", "Penny Royal Tea","./tabs/PennyRoyalTea.pdf");
 let sappy = new Tab("Nirvana", "Sappy","./tabs/Sappy.pdf");
+let somethingInTheWay = new Tab("Nirvana", "Something in the way","./tabs/SomethingInTheWay.pdf");
+let theManWhoSoldTheWorld = new Tab("Nirvana", "The Man Who Sold The World","./tabs/TheManWhoSoldTheWorld.pdf");
+let whereDidYouSleepLastNight = new Tab("Nirvana", "Where did you sleep last night","./tabs/WhereDidYouSleepLastNight.pdf");
 
-let tabs = [dumb, lakeOfFire, whereDidYouSleepLastNight, somethingInTheWay,sappy];
-
+let tabs = [dumb, exhausted, heartShapedBox, lakeOfFire, lithium, loveBuzz, myHero, pennyRoyalTea, sappy, somethingInTheWay, theManWhoSoldTheWorld, whereDidYouSleepLastNight];
+tabs.sort(function compare(a,b){
+if(a.nameGroup < b.nameGroup){return -1;}
+/*if(a.nameGroup > b.nameGroup){return 1;}
+else{return 0;}
+*/
+});
 
 const body = document.querySelector("body");
 const main = document.querySelector("#main");
